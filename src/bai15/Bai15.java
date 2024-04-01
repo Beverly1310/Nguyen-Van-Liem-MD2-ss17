@@ -2,7 +2,12 @@ package bai15;
 
 public class Bai15 {
     public static void main(String[] args) throws IllegalTriangleException {
-        System.out.println(isTriangle(2,1,1));
+
+        try {
+            System.out.println(isTriangle(2,1,1));
+        } catch (IllegalTriangleException e){
+            System.out.println("Khong phai la tam giac");
+        }
     }
     public static boolean isTriangle(double a, double b, double c) throws IllegalTriangleException {
         if (a<=0 || b<=0 || c<=0){
