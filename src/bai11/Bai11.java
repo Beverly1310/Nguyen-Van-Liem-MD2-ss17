@@ -34,7 +34,7 @@ public class Bai11 {
                 }
                 break;
             case 2:
-                if (date<1 || date>28) {
+                if (date<1 || date>29) {
                     throw new DateException("Ngay khong hop le");
                 }
                 break;
